@@ -50,8 +50,14 @@
     }
   }
 
+  .hero-pic {
+    width: 200px;
+    float: left;
+  }
+
   .hero-cta {
     display: flex;
+    padding-left: 200px;
 
     @include respond(tab-port) {
       justify-content: center;
