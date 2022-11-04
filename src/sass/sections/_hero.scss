@@ -53,14 +53,27 @@
   .hero-pic {
     width: 200px;
     float: left;
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   .hero-cta {
     display: flex;
     padding-left: 200px;
 
+    @include respond(tab-land) {
+      padding-left: 0px;
+    }
+
     @include respond(tab-port) {
+      padding-left: 0px;
       justify-content: center;
+    }
+
+    @include respond(phone) {
+      padding-left: 0px;
     }
 
     & a {
